@@ -1,0 +1,49 @@
+//
+   Created by @stevenschmatz on 7/1/14.
+
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title Gopherbox
+
+        // Google Fonts
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:300', rel='stylesheet', type='text/css')
+
+        //JQuery and JQueryUI
+            TODO: On upload, replace with GoogleAPI Link
+            TODO: Import JQueryUI
+        script(src='lib/jquery-1.11.1.min.js')
+
+        // stylesheets and javascript files
+        link(rel='stylesheet', href='src/css/index.css')
+        script(src='src/javascript/index.js')
+
+        // Google Analytics
+        script (function(g,o,p,h,e,r,s){g['GoogleAnalyticsObject']=e;g[e]=g[e]||function(){(g[e].q=g[e].q||[]).push(arguments)},g[e].l=1*new Date();r=o.createElement(p),s=o.getElementsByTagName(p)[0];r.async=1;r.src=h;s.parentNode.insertBefore(r,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52467613-1', 'auto');ga('send', 'pageview');
+
+
+    body
+        #wrapper
+            #pageOne.fullPage
+
+                #pageOne_toolbar
+                    a#contact_link(href="mailto:stevenschmatz@gmail.com") contact me
+
+                #pageOne_content_wrapper
+                    #gopherbox_logo_title_and_slogan
+                        #gopherbox_logo_image
+                            img#gopherbox_front(src='resources/images/gopherbox_front.png', alt='gopherbox-front')
+                            img#gopherbox_back(src='resources/images/gopherbox_back.png', alt='gopherbox-back')
+                            img#gopherbox_gopher_head(src='resources/images/gopherbox_gopher_head.png', alt='gopherbox-gopher')
+
+                        #gopherbox_title_and_slogan
+                            p#gopherbox_title GOPHERBOX
+                            p#gopherbox_slogan open source, secure cloud storage platform
+
+                    #download_div_wrapper
+                        #download_div
+                            p#description cloud storage with client-side encryption.
+
+                            form(action='https://github.com/schmatz/gopherbox')
+                                input.button(type='submit', value='Check out the code!', name='subscribe')

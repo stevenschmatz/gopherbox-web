@@ -1,0 +1,134 @@
+html, body, #wrapper, .fullPage {
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.fullPage {
+  width: 100%; }
+
+#pageOne {
+  border-top: 1px solid whitesmoke;
+  background: whitesmoke;
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  /*End pageOne "read more" */ }
+  #pageOne #pageOne_toolbar {
+    height: 10%;
+    border: 0px solid greenyellow;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 5%;
+    background-color: whitesmoke; }
+    #pageOne #pageOne_toolbar #contact_link {
+      color: darkslategray;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.25em;
+      text-decoration: none; }
+  #pageOne #pageOne_content_wrapper {
+    height: 80%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    display: table;
+    float: left;
+    /*End Gopherbox logo, title, and slogan */
+    /*End download div wrapper */ }
+    #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan {
+      display: table-cell;
+      vertical-align: middle;
+      border: 0px solid mediumpurple;
+      width: 400px;
+      /*End interactive Gopherbox logo */
+      /*End Gopherbox title and slogan */ }
+      #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_logo_image {
+        position: relative;
+        width: 250px;
+        height: 273.48485px;
+        border: 0px solid black;
+        margin: 0 auto; }
+        #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_logo_image #gopherbox_front {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 2; }
+        #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_logo_image #gopherbox_gopher_head {
+          position: absolute;
+          width: 100%;
+          top: 125px;
+          left: 0;
+          z-index: 1; }
+        #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_logo_image #gopherbox_back {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 0; }
+      #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_title_and_slogan {
+        border: 0px solid blue;
+        text-align: center; }
+        #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_title_and_slogan #gopherbox_title {
+          font-family: "Open Sans", sans-serif;
+          font-size: 2em; }
+        #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_title_and_slogan #gopherbox_slogan {
+          font-family: "Open Sans", sans-serif; }
+    #pageOne #pageOne_content_wrapper #download_div_wrapper {
+      border: 0px solid chartreuse;
+      display: table-cell;
+      vertical-align: middle;
+      width: 400px;
+      /*End download div */ }
+      #pageOne #pageOne_content_wrapper #download_div_wrapper #download_div {
+        display: table-cell;
+        vertical-align: middle;
+        height: 50%;
+        border-right: 0px solid yellow;
+        border-top: 0px solid yellow;
+        border-bottom: 0px solid yellow;
+        border-left: 1px solid darkgray;
+        float: left;
+        padding: 15%;
+        position: relative;
+        text-align: left;
+        /*End embedded signup form */ }
+        #pageOne #pageOne_content_wrapper #download_div_wrapper #download_div #description {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.5em;
+          padding-bottom: 1em; }
+        #pageOne #pageOne_content_wrapper #download_div_wrapper #download_div input.button {
+          height: 20%;
+          width: 80%;
+          border-radius: 6px;
+          padding: 10px;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-size: 12pt;
+          background-color: rgba(0, 120, 31, 0.42);
+          border-color: white; }
+        #pageOne #pageOne_content_wrapper #download_div_wrapper #download_div input.button:hover {
+          background-color: rgba(0, 150, 61, 0.42); }
+  #pageOne #pageOne_readMore {
+    height: 10%;
+    width: calc(100% - 0px);
+    text-align: center;
+    display: table;
+    border: 0px solid chocolate;
+    line-height: 50%; }
+    #pageOne #pageOne_readMore #readMore_button_container {
+      display: table-cell;
+      border: 0px solid cadetblue; }
+      #pageOne #pageOne_readMore #readMore_button_container #readMore_button {
+        font-family: "Open Sans", sans-serif;
+        border: 0px solid aquamarine; }
+
+/*End page one */
+#pageTwo {
+  background-color: whitesmoke;
+  text-align: center;
+  border-top: 1px solid gray; }
+  #pageTwo p#mission {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em; }

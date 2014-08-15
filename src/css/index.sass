@@ -1,0 +1,170 @@
+// display_debug_borders turns on borders around divs, 1: true, 0: false
+$display_debug_borders: 0
+
+$Open_Sans_font: "Open Sans", sans-serif
+
+html, body, #wrapper, .fullPage
+    height: 100%
+
+body
+    padding: 0
+    margin: 0
+
+.fullPage
+    width: 100%
+
+#pageOne
+    $fullPage_border_thickness: 2px
+    $toolBar_and_readMore_height: 10%
+    border-top: 1px solid whitesmoke
+    background: whitesmoke
+    width: calc(100% - #{2 * $fullPage_border_thickness * $display_debug_borders})
+    height: calc(100% - #{2 * $fullPage_border_thickness * $display_debug_borders})
+
+    #pageOne_toolbar
+        height: $toolBar_and_readMore_height
+        border: (3px * $display_debug_borders) solid greenyellow
+        text-align: right
+        padding-top: 20px
+        padding-right: 5%
+        background-color: whitesmoke
+
+        #contact_link
+            color: darkslategrey
+            font-family: $Open_Sans_font
+            font-size: 1.25em
+            text-decoration: none
+
+    #pageOne_content_wrapper
+        $section_width: 400px
+        height: 100% - 2*$toolBar_and_readMore_height
+        width: 50%
+        margin-left: 25%
+        margin-right: 25%
+        text-align: center
+        display: table
+        float: left
+
+        #gopherbox_logo_title_and_slogan
+            display: table-cell
+            vertical-align: middle
+            $gopherbox_logo_image_width: 250px
+            $gopherbox_logo_image_height: ($gopherbox_logo_image_width * 722/660) // Image dimensions
+
+            border: (2px * $display_debug_borders) solid mediumpurple
+            width: $section_width
+
+            #gopherbox_logo_image
+                position: relative
+                width: $gopherbox_logo_image_width
+                height: $gopherbox_logo_image_height
+                border: (3px * $display_debug_borders) solid black
+                margin: 0 auto
+
+                #gopherbox_front
+                    position: absolute
+                    width: 100%
+                    top: 0
+                    left: 0
+                    z-index: 2
+
+
+                #gopherbox_gopher_head
+                    position: absolute
+                    width: 100%
+                    top: $gopherbox_logo_image_width / 2
+                    left: 0
+                    z-index: 1
+
+
+                #gopherbox_back
+                    position: absolute
+                    width: 100%
+                    top: 0
+                    left: 0
+                    z-index: 0
+            /*End interactive Gopherbox logo*/
+
+            #gopherbox_title_and_slogan
+                border: (2px * $display_debug_borders) solid blue
+                text-align: center
+
+                #gopherbox_title
+                    font-family: $Open_Sans_font
+                    font-size: 2em
+                #gopherbox_slogan
+                    font-family: $Open_Sans_font
+            /*End Gopherbox title and slogan*/
+
+        /*End Gopherbox logo, title, and slogan*/
+
+        #download_div_wrapper
+            border: (3px * $display_debug_borders) solid chartreuse
+            display: table-cell
+            vertical-align: middle
+            width: $section_width
+
+            #download_div
+                display: table-cell
+                vertical-align: middle
+                height: 50%
+                border-right: (3px * $display_debug_borders) solid yellow
+                border-top: (3px * $display_debug_borders) solid yellow
+                border-bottom: (3px * $display_debug_borders) solid yellow
+                border-left: 1px solid darkgrey
+                float: left
+                padding: 15%
+                position: relative
+                text-align: left
+
+                #description
+                    font-family: $Open_Sans_font
+                    font-size: 1.5em
+                    padding-bottom: 1em
+
+                input.button
+                    height: 20%
+                    width: 80%
+                    border-radius: 6px
+                    padding: 10px
+                    font-family: $Open_Sans_font
+                    color: white
+                    font-size: 12pt
+                    background-color: rgba(0, 120, 31, 0.42)
+                    border-color: white
+
+                input.button:hover
+                    background-color: rgba(0, 150, 61, 0.42)
+                /*End embedded signup form*/
+
+            /*End download div*/
+        /*End download div wrapper*/
+
+    #pageOne_readMore
+        height: $toolBar_and_readMore_height
+        width: calc(100% - #{2 * $fullPage_border_thickness * $display_debug_borders})
+        text-align: center
+        display: table
+        border: (2px * $display_debug_borders) solid chocolate
+        line-height: 50%
+
+        #readMore_button_container
+            display: table-cell
+            border: (2px * $display_debug_borders) solid cadetblue
+
+            #readMore_button
+                font-family: $Open_Sans_font
+                border: (2px * $display_debug_borders) solid aquamarine
+
+    /*End pageOne "read more"*/
+
+/*End page one*/
+
+#pageTwo
+    background-color: whitesmoke
+    text-align: center
+    border-top: 1px solid grey
+
+    p#mission
+        font-family: $Open_Sans_font
+        font-size: 2em
