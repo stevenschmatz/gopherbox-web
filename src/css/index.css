@@ -40,7 +40,7 @@ body {
       display: table-cell;
       vertical-align: middle;
       border: 0px solid mediumpurple;
-      width: 500px;
+      width: 600px;
       /*End interactive Gopherbox logo */
       /*End Gopherbox title and slogan */ }
       #pageOne #pageOne_content_wrapper #gopherbox_logo_title_and_slogan #gopherbox_logo_image {
@@ -79,7 +79,7 @@ body {
       border: 0px solid chartreuse;
       display: table-cell;
       vertical-align: middle;
-      width: 500px;
+      width: 600px;
       /*End download div */ }
       #pageOne #pageOne_content_wrapper #download_div_wrapper #download_div {
         display: table-cell;
